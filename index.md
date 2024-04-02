@@ -13,9 +13,9 @@
     khangtran@Khangs-MacBook-Pro ~ % cd
     khangtran@Khangs-MacBook-Pro ~ % 
     ``` 
-    Output? - No output, the program is expecting an input on the next line. failing to provide a valid directory throws an error `zsh:        command not found: akjsdfba`
+    Output? - No output, the program is expecting an input on the next line. failing to provide a valid directory throws an error `zsh:        command not found: akjsdfba`.
 
-    Error? - No, after inputing cd the next line is expecting a directory to be inputed
+    Error? - No, after inputing cd the next line is expecting a directory to be inputed.
   
   * _path to a directory as argument_
   
@@ -25,9 +25,9 @@
     khangtran@Khangs-MacBook-Pro ~ % cd lecture1
     khangtran@Khangs-MacBook-Pro lecture1 % 
     ```
-    Output? - No output but it does on the next line what directory it has gone into. By also writting `pwd` it displays a new working         directory (`/Users/khangtran/lecture1`)
+    Output? - No output but it does on the next line what directory it has gone into. By also writting `pwd` it displays a new working         directory (`/Users/khangtran/lecture1`).
 
-    Error? - No, after inputing cd along with a directory as its argument it then proceeds to move into that directory
+    Error? - No, after inputing cd along with a directory as its argument it then proceeds to move into that directory.
   
   * _path to a file as argument_
   
@@ -38,9 +38,9 @@
     cd: not a directory: Hello.java
     khangtran@Khangs-MacBook-Pro lecture1 % 
     ``` 
-    Output? - The output tells us that the argument inputed is not a valid directory. By inputting pwd, we can see that our working            directory has not changed
+    Output? - The output tells us that the argument inputed is not a valid directory. By inputting pwd, we can see that our working            directory has not changed.
 
-    Error? - Yes, cd is only meant to move into directories and not files hence why it throws an error when trying to move into a file
+    Error? - Yes, cd is only meant to move into directories and not files hence why it throws an error when trying to move into a file.
 
 2)__ls__
   
@@ -55,9 +55,9 @@
     Coding                  Downloads               Music                   iCloud Drive (Archive)  lecture1                test.js
     khangtran@Khangs-MacBook-Pro ~ % 
     ``` 
-    Output? - by inputting ls, it lists all the files in the current directory
+    Output? - by inputting ls, it lists all the files in the current directory.
 
-    Error? - Not an error
+    Error? - Not an error.
   
   * _path to a directory as argument_
   
@@ -68,9 +68,9 @@
     Hello.class     Hello.java      README          messages
     khangtran@Khangs-MacBook-Pro ~ % 
     ``` 
-    Output? - by inputting ls along with a directory as its argument, it lists all the files in the arguement directory
+    Output? - by inputting ls along with a directory as its argument, it lists all the files in the arguement directory.
 
-    Error? -  Not an error
+    Error? -  Not an error.
   
   * _path to a file as argument_
   
@@ -96,9 +96,9 @@
     input
     input
     ``` 
-    Output? - By inputing cat with no argument, it moves to the next line and prints out what ever is inputed next in a infinite loop
+    Output? - By inputing cat with no argument, it moves to the next line and prints out what ever is inputed next in a infinite loop.
 
-    Error? - Not an error
+    Error? - Not an error.
   
   * _path to a directory as argument_
   
@@ -109,9 +109,9 @@
     cat: lecture1: Is a directory
     khangtran@Khangs-MacBook-Pro ~ % 
     ``` 
-    Output? - The output and an error thrown by the program specifying that the input argument is a directory
+    Output? - The output and an error thrown by the program specifying that the input argument is a directory.
 
-    Error? - Yes, cat takes in a file and not a directory hence why an error was thrown
+    Error? - Yes, cat takes in a file and not a directory hence why an error was thrown.
   
   * _path to a file as argument_
   
@@ -132,7 +132,7 @@
     }%                                                                                                                                                                              
     khangtran@Khangs-MacBook-Pro lecture1 % 
     ``` 
-    Output? - By inputing cat with a file as its argument, it outputs all the text and code in that file
+    Output? - By inputing cat with a file as its argument, it outputs all the text and code in that file.
 
-    Error? - Not an error
+    Error? - Not an error.
 ---
