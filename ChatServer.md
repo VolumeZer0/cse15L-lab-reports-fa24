@@ -1,1 +1,1 @@
-<user>: <message>
+hello
