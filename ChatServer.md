@@ -70,9 +70,13 @@ __user__ is a list that holds the quaery data for user. In this case ["user", "e
 ## Part 2
 ---
 
+![Image](https://github.com/VolumeZer0/cse15L-lab-reports-fa24/blob/main/Screen%20Shot%202024-04-22%20at%207.19.38%20PM.png?raw=true)
+
+![Image](https://github.com/VolumeZer0/cse15L-lab-reports-fa24/blob/main/Screen%20Shot%202024-04-22%20at%207.20.04%20PM.png?raw=true )
+
+![Image](https://github.com/VolumeZer0/cse15L-lab-reports-fa24/blob/main/Screen%20Shot%202024-04-22%20at%207.23.12%20PM.png?raw=true)
+
 ---
 ## Part 3
 ---
 In week 2 and 3 I have learned alot of new things including ssh, queries, and paths. ssh allows us to access another computer remotely, and allow people from different computers to connect to one. queries and paths are components of a link that have different affects on the webpage. paths are direct inctructions on where to go from to home page and queries are paramenters inputted into the webstie.
-
-
