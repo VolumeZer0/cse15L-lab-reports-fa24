@@ -13,7 +13,7 @@
     khangtran@Khangs-MacBook-Pro ~ % cd
     khangtran@Khangs-MacBook-Pro ~ % 
     ``` 
-    Output? - No output, the program is expecting an input on the next line. failing to provide a valid directory throws an error `zsh:        command not found: akjsdfba`.
+    Output? - By putting in no argument, the cd command goes to the home directory.
 
     Error? - No, after inputing cd the next line is expecting a directory to be inputed.
   
@@ -96,7 +96,7 @@
     input
     input
     ``` 
-    Output? - By inputing cat with no argument, it moves to the next line and prints out what ever is inputed next in a infinite loop.
+    Output? - By inputing cat with no argument, it moves to the next line and prints out what ever is inputed next in a infinite loop untill exited with "control + c".
 
     Error? - Not an error.
   
@@ -135,4 +135,3 @@
     Output? - By inputing cat with a file as its argument, it outputs all the text and code in that file.
 
     Error? - Not an error.
----
