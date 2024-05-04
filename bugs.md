@@ -126,5 +126,8 @@ After:
     Explanation:
     
   __Citations__
+  [grep resources][https://www.geeksforgeeks.org/grep-command-in-unixlinux/]
+  [find resources][https://www.geeksforgeeks.org/find-command-in-linux-with-examples/#options-available-in-find-command-in-linux]
+  [less resources][https://www.geeksforgeeks.org/less-command-linux-examples/]
 
 
