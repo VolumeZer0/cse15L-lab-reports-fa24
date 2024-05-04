@@ -98,12 +98,36 @@ After:
   _grep:_
     Ex 1:
     Input:
+      ```
+      grep -c ".txt" find-results.txt 
+      ```
     Output:
+      ```
+        1391
+      ```
     Explanation:
+    -c is a option avalible to the grep command that instead returns the count of the occurances of the matching pattern. This is usefull in the case that you only want the count of how many and not the files themselves.
     Ex 2:
     Input:
+      ```
+        grep -v ".txt" find-results.txt
+      ```
     Output:
+      ```
+      technical
+      technical/government
+      technical/government/About_LSC
+      technical/government/Env_Prot_Agen
+      technical/government/Alcohol_Problems
+      technical/government/Gen_Account_Office
+      technical/government/Post_Rate_Comm
+      technical/government/Media
+      technical/plos
+      technical/biomed
+      technical/911report
+      ```
     Explanation:
+    -v is an option avalible to the grep command. This option makes it so that the command prints the commands that do not match the pattern instead of printing the files that do. This is useful when you want to exclude a certain file type or name but not any other.
     
   _less:_
     Ex 1:
@@ -126,8 +150,8 @@ After:
     Explanation:
     
   __Citations__
-  [grep resources][https://www.geeksforgeeks.org/grep-command-in-unixlinux/]
-  [find resources][https://www.geeksforgeeks.org/find-command-in-linux-with-examples/#options-available-in-find-command-in-linux]
-  [less resources][https://www.geeksforgeeks.org/less-command-linux-examples/]
+  * [grep resources][https://www.geeksforgeeks.org/grep-command-in-unixlinux/]
+  * [find resources][https://www.geeksforgeeks.org/find-command-in-linux-with-examples/#options-available-in-find-command-in-linux]
+  * [less resources][https://www.geeksforgeeks.org/less-command-linux-examples/]
 
 
