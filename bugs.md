@@ -85,6 +85,46 @@ After:
       }
       return newArray;//changed from arr to newArry
     }
-```
+  ```
 5.Briefly describe (2-3 sentences) why the fix addresses the issue.
-The fix addresses the issue because because it reverses the array in a output array instead of in the inputted one. This way when the values are being coppied over in reverse order, the values that are in the begining are copied over aswell.
+
+  The fix addresses the issue because because it reverses the array in a output array instead of in the inputted one. This way when the values are being coppied over in reverse   order, the values that are in the begining are copied over aswell.
+
+---
+## Part 2 - Researching Commands
+---
+  __Examples:__
+    
+  _grep:_
+    Ex 1:
+    Input:
+    Output:
+    Explanation:
+    Ex 2:
+    Input:
+    Output:
+    Explanation:
+    
+  _less:_
+    Ex 1:
+    Input:
+    Output:
+    Explanation:
+    Ex 2:
+    Input:
+    Output:
+    Explanation:
+    
+  _find:_
+    Ex 1:
+    Input:
+    Output:
+    Explanation:
+    Ex 2:
+    Input:
+    Output:
+    Explanation:
+    
+  __Citations__
+
+
