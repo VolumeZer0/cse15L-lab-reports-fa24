@@ -108,24 +108,24 @@ After:
       Explanation:
       -c is a option avalible to the grep command that instead returns the count of the occurances of the matching pattern. This is usefull in the case that you only want the count of how many and not the files themselves.
     
-    __Ex 2:__
-      __Input:__
+   __Ex 2:__
+    __Input:__
         ```
           grep -v ".txt" find-results.txt
         ```
-      __Output:__
+     __Output:__
         ```
-        technical
-        technical/government
-        technical/government/About_LSC
-        technical/government/Env_Prot_Agen
-        technical/government/Alcohol_Problems
-        technical/government/Gen_Account_Office
-        technical/government/Post_Rate_Comm
-        technical/government/Media
-        technical/plos
-        technical/biomed
-        technical/911report
+          technical
+          technical/government
+          technical/government/About_LSC
+          technical/government/Env_Prot_Agen
+          technical/government/Alcohol_Problems
+          technical/government/Gen_Account_Office
+          technical/government/Post_Rate_Comm
+          technical/government/Media
+          technical/plos
+          technical/biomed
+          technical/911report
         ```
       __Explanation:__
       -v is an option avalible to the grep command. This option makes it so that the command prints the commands that do not match the pattern instead of printing the files that do. This is useful when you want to exclude a certain file type or name but not any other.
