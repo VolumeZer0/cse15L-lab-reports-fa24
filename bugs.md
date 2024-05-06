@@ -208,6 +208,7 @@ After:
       ```
     Explanation:
     the -name option for the find takes a name of a file and searches the directory and its sub directories for its path.
+
   __Citations__
   * [grep resources][https://www.geeksforgeeks.org/grep-command-in-unixlinux/]
   * [find resources][https://www.geeksforgeeks.org/find-command-in-linux-with-examples/#options-available-in-find-command-in-linux]
