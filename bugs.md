@@ -1,4 +1,4 @@
-# CSE 15L LAB REPORTS SPRING 24
+r# CSE 15L LAB REPORTS SPRING 24
 
 ---
 ## Week 5
@@ -133,23 +133,81 @@ After:
   _less:_
     Ex 1:
     Input:
+      ```
+      less -N find-results.txt
+      ```
     Output:
+      ```
+      1 technical
+      2 technical/government
+      3 technical/government/About_LSC
+      4 technical/government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
+      5 technical/government/About_LSC/Progress_report.txt
+      6 technical/government/About_LSC/Strategic_report.txt
+      7 technical/government/About_LSC/Comments_on_semiannual.txt
+      ...
+      ```
     Explanation:
+    The -N option displays the line number along with the path to the file
     Ex 2:
     Input:
+      ```
+        less -P "report" find-results.txt
+      ```
     Output:
+      ```
+        technical
+        technical/government
+        technical/government/About_LSC
+        technical/government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
+        technical/government/About_LSC/Progress_REPORT.txt
+        technical/government/About_LSC/Strategic_REPORT.txt
+        technical/government/About_LSC/Comments_on_semiannual.txt
+        technical/government/About_LSC/Special_REPORT_to_congress.txt
+        technical/government/About_LSC/CONFIG_STANDARDS.txt
+        technical/government/About_LSC/commission_REPORT.txt
+        technical/government/About_LSC/LegalServCorp_v_VelazquezDissent.txt
+        technical/government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt
+        technical/government/About_LSC/LegalServCorp_v_VelazquezOpinion.txt
+        technical/government/About_LSC/diversity_priorities.txt
+        technical/government/About_LSC/REPORTing_system.txt
+      ```
     Explanation:
+    The option -p for the less command takes in a string and highlights the occurances of the string found in the given file (Capalized above to show highlighting)
     
   _find:_
     Ex 1:
     Input:
+      ```
+         find technical -type d
+      ```
     Output:
+      ```
+        technical
+        technical/government
+        technical/government/About_LSC
+        technical/government/Env_Prot_Agen
+        technical/government/Alcohol_Problems
+        technical/government/Gen_Account_Office
+        technical/government/Post_Rate_Comm
+        technical/government/Media
+        technical/plos
+        technical/biomed
+        technical/911report
+      ```
     Explanation:
+    the -type option takes a parameter. It then returnts the paths that match that pattern of the parameter. In this case -d mean directory but it can also be -f for files.ll
     Ex 2:
     Input:
+      ```
+        find technical -name chapter-11.txt
+      ```
     Output:
+      ```
+        technical/911report/chapter-11.txt
+      ```
     Explanation:
-    
+    the -name option for the find takes a name of a file and searches the directory and its sub directories for its path.
   __Citations__
   * [grep resources][https://www.geeksforgeeks.org/grep-command-in-unixlinux/]
   * [find resources][https://www.geeksforgeeks.org/find-command-in-linux-with-examples/#options-available-in-find-command-in-linux]
