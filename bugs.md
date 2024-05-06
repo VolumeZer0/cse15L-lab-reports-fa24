@@ -1,5 +1,3 @@
-r# CSE 15L LAB REPORTS SPRING 24
-
 ---
 ## Week 5
 ---
