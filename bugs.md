@@ -5,7 +5,7 @@
 ---
 
 1.A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown).
-  ```
+```
     @Test
     public void testReverseInPlace2(){
       int[] intArr = {1, 2, 3, 4 };
@@ -18,10 +18,10 @@
       int[] intArr = {5, 3, 0, 0, 5 };
       assertArrayEquals(new int[]{5, 0, 0, 3, 5 }, ArrayExamples.reversed(intArr));
     }
+```
 
-  ```
 2.An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown).
-  ```
+```
       @Test
       public void testReverseInPlace2(){
         int[] intArr = {1, 2, 3, 4};
@@ -35,15 +35,16 @@
         assertArrayEquals(new int[]{4, 3, 3, 4}, ArrayExamples.reversed(intArr));
       }
     
-  ```
+```
 3.The symptom, as the output of running the two tests above (provide it as a screenshot -- one test should pass, one test should fail).
 
 ![Image](https://github.com/VolumeZer0/cse15L-lab-reports-fa24/blob/main/Screen%20Shot%202024-05-04%20at%201.12.07%20AM.png?raw=true)
 
+
 4.The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown).
 
 Before:
-  ```
+```
     // Changes the input array to be in reversed order
     static void reverseInPlace(int[] arr) {
       for(int i = 0; i < arr.length; i += 1) {
@@ -60,9 +61,9 @@ Before:
       }
       return arr;
     }
-  ```
+```
 After:
-  ```
+```
     // Changes the input array to be in reversed order
     static void reverseInPlace(int[] arr) {
       int[] newArray = new int[arr.length];
@@ -83,133 +84,148 @@ After:
       }
       return newArray;//changed from arr to newArry
     }
-  ```
+```
 5.Briefly describe (2-3 sentences) why the fix addresses the issue.
 
-  The fix addresses the issue because because it reverses the array in a output array instead of in the inputted one. This way when the values are being coppied over in reverse   order, the values that are in the begining are copied over aswell.
+The fix addresses the issue because because it reverses the array in a output array instead of in the inputted one. This way when the values are being coppied over in reverse   order, the values that are in the begining are copied over aswell.
 
 ---
 ## Part 2 - Researching Commands
 ---
-  __Examples:__
-    
-  _grep:_
-    __Ex 1:__
-      __Input:__
-        ```
-          grep -c ".txt" find-results.txt 
-        ```
-      __Output:__
-        ```
-          1391
-        ```
-      Explanation:
-      -c is a option avalible to the grep command that instead returns the count of the occurances of the matching pattern. This is usefull in the case that you only want the count of how many and not the files themselves.
-    
-   __Ex 2:__
-    __Input:__
-        ```
-          grep -v ".txt" find-results.txt
-        ```
-     __Output:__
-        ```
-          technical
-          technical/government
-          technical/government/About_LSC
-          technical/government/Env_Prot_Agen
-          technical/government/Alcohol_Problems
-          technical/government/Gen_Account_Office
-          technical/government/Post_Rate_Comm
-          technical/government/Media
-          technical/plos
-          technical/biomed
-          technical/911report
-        ```
-      __Explanation:__
-      -v is an option avalible to the grep command. This option makes it so that the command prints the commands that do not match the pattern instead of printing the files that do. This is useful when you want to exclude a certain file type or name but not any other.
-    
-  _less:_
-    Ex 1:
-    Input:
-      ```
-      less -N find-results.txt
-      ```
-    Output:
-      ```
-      1 technical
-      2 technical/government
-      3 technical/government/About_LSC
-      4 technical/government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
-      5 technical/government/About_LSC/Progress_report.txt
-      6 technical/government/About_LSC/Strategic_report.txt
-      7 technical/government/About_LSC/Comments_on_semiannual.txt
-      ...
-      ```
-    Explanation:
-    The -N option displays the line number along with the path to the file
-    Ex 2:
-    Input:
-      ```
-        less -P "report" find-results.txt
-      ```
-    Output:
-      ```
-        technical
-        technical/government
-        technical/government/About_LSC
-        technical/government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
-        technical/government/About_LSC/Progress_REPORT.txt
-        technical/government/About_LSC/Strategic_REPORT.txt
-        technical/government/About_LSC/Comments_on_semiannual.txt
-        technical/government/About_LSC/Special_REPORT_to_congress.txt
-        technical/government/About_LSC/CONFIG_STANDARDS.txt
-        technical/government/About_LSC/commission_REPORT.txt
-        technical/government/About_LSC/LegalServCorp_v_VelazquezDissent.txt
-        technical/government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt
-        technical/government/About_LSC/LegalServCorp_v_VelazquezOpinion.txt
-        technical/government/About_LSC/diversity_priorities.txt
-        technical/government/About_LSC/REPORTing_system.txt
-      ```
-    Explanation:
-    The option -p for the less command takes in a string and highlights the occurances of the string found in the given file (Capalized above to show highlighting)
-    
-  _find:_
-    Ex 1:
-    Input:
-      ```
-         find technical -type d
-      ```
-    Output:
-      ```
-        technical
-        technical/government
-        technical/government/About_LSC
-        technical/government/Env_Prot_Agen
-        technical/government/Alcohol_Problems
-        technical/government/Gen_Account_Office
-        technical/government/Post_Rate_Comm
-        technical/government/Media
-        technical/plos
-        technical/biomed
-        technical/911report
-      ```
-    Explanation:
-    the -type option takes a parameter. It then returnts the paths that match that pattern of the parameter. In this case -d mean directory but it can also be -f for files.ll
-    Ex 2:
-    Input:
-      ```
-        find technical -name chapter-11.txt
-      ```
-    Output:
-      ```
-        technical/911report/chapter-11.txt
-      ```
-    Explanation:
-    the -name option for the find takes a name of a file and searches the directory and its sub directories for its path.
+__Examples:__
+
+---
+
+_grep:_
+
+_Option -c_
+
+Explanation:
+-c is a option avalible to the grep command that instead returns the count of the occurances of the matching pattern. This is usefull in the case that you only want the count of how many and not the files themselves.
+
+__EX 1 Input:__
+```
+  grep -c ".txt" find-results.txt
+```
+
+__EX 1 Output:__
+```
+  1391
+```
+
+__EX 2 Input:__
+```
+  grep -c "java" find-results.txt
+```
+
+__EX 2 Output:__
+```
+  0
+```
+
+---
+
+_Option -v_
+
+Explanation:
+-v is an option avalible to the grep command. This option makes it so that the command prints the commands that do not match the pattern instead of printing the files that do. This is useful when you want to exclude a certain file type or name but not any other.
+
+__EX 1 Input:__
+```
+  grep -v ".txt" find-results.txt
+```
+
+__EX 1 Output:__
+```
+  technical
+  technical/government
+  technical/government/About_LSC
+  technical/government/Env_Prot_Agen
+  technical/government/Alcohol_Problems
+  technical/government/Gen_Account_Office
+  technical/government/Post_Rate_Comm
+  technical/government/Media
+  technical/plos
+  technical/biomed
+  technical/911report
+```
+
+__EX 2 Input:__
+```
+  grep -v "technical" find-results.txt
+```
+
+__EX 2 Output:__
+```
+  
+```
+
+---
+
+_Option -n_
+Explanation:
+-n is an option avalible to the grep command. This option makes it so that the command prints the commands that match the pattern nd prints the number line. This is useful when you want to include a certain file type or name but not any other.
+
+__EX 1 Input:__
+```
+  grep -n ".sh" find-results.txt
+```
+
+__EX 1 Output:__
+```
+  218:technical/government/Media/Coup_Reshapes_Legal_Aid.txt
+  270:technical/government/Media/Barr_sharpening_ax.txt
+  282:technical/government/Media/Pro-bono_road_show.txt
+```
+
+__EX 2 Input:__
+```
+  docsearch % grep -n "1001" find-results.txt
+```
+
+__EX 2 Output:__
+```
+  302:technical/plos/pmed.0010010.txt
+  314:technical/plos/pmed.0010013.txt
+```
+
+_Option -r _
+
+Explanation:
+The Option -r reads all files under each directory, recursively.
+
+__EX 1 Input:__
+```
+  grep -r "911" technical
+```
+
+__EX 1 Output:__
+```
+  technical/government/About_LSC/commission_report.txt:S16911 (Oct. 17, 1986) (statement of Sen. Kennedy); March Comments
+  technical/government/About_LSC/State_Planning_Special_Report.txt:19881989199019911992199319941995199619971998199920002001
+  technical/government/Env_Prot_Agen/tech_adden.txt:children, 911
+  technical/government/Gen_Account_Office/Oct15-1999_gg00026t.txt:512-9110, and for information regarding GAO's work on GSA, please
+  technical/government/Gen_Account_Office/og96034.txt:Commission's Rules To Ensure Compatibility with Enhanced 911
+  technical/government/Gen_Account_Office/og96034.txt:Emergency Calling Systems (Wireless E911 Rules)
+```
+
+__EX 2 Input:__
+```
+  grep -r "1471-" technical
+```
+
+__EX 2 Output:__
+```
+  technical/biomed/1471-2202-2-9.txt:        http://www.biomedcentral.com/1471-2202/2/8). It is now
+  technical/biomed/1471-2202-2-8.txt:          paper http://www.biomedcentral.com/1471-2202/2/9), and
+  technical/biomed/1471-2474-2-3.txt:        http://www.biomedcentral.com/1471-8219/2/5
+```
+
+---
+.
 
   __Citations__
   * [grep resources][https://www.geeksforgeeks.org/grep-command-in-unixlinux/]
-  * [find resources][https://www.geeksforgeeks.org/find-command-in-linux-with-examples/#options-available-in-find-command-in-linux]
-  * [less resources][https://www.geeksforgeeks.org/less-command-linux-examples/]
+
 
 
