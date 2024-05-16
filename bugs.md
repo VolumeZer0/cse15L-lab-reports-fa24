@@ -192,7 +192,7 @@ __EX 2 Output:__
 _Option -r _
 
 Explanation:
-The Option -r reads all files under each directory, recursively.
+The Option -r reads all files under each directory, recursively. This is important when you want to go through files recusively.
 
 __EX 1 Input:__
 ```
