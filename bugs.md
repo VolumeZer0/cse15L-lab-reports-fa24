@@ -157,7 +157,7 @@ __EX 2 Input:__
 
 __EX 2 Output:__
 ```
-  
+  *no output*
 ```
 
 ---
