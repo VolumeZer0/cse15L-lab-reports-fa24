@@ -20,7 +20,8 @@ Screen Shot:
 ![Image](https://raw.githubusercontent.com/VolumeZer0/cse15L-lab-reports-fa24/main/5.png)
 
 Keys Pressed:
-```Git<space>clone<space><control><v><enter> ``` : to clone the repo from copy and paste
+```Git<space>clone<space><control><v><enter>``` : to clone the repo from copy and paste
+
 ```yes<enter>``` : to agree to the terms and conditions
 
 ---
@@ -79,9 +80,13 @@ Screen Shot:
 Keys Pressed:
 
 ```Git<space>status<enter>``` : to check the status of the files
+
 ```Git<space>add<space>L<space><tab><enter>``` : to auto fill and add the file
+
 ```Git<space>commit<space>-m<space>“fixed”<enter>``` : to commit added files
+
 ```Git<space>push<enter>``` : to push the committed changes to the repository
+
 
 
 
