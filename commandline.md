@@ -79,13 +79,13 @@ Screen Shot:
 
 Keys Pressed:
 
-```Git<space>status<enter>``` : to check the status of the files
+```git<space>status<enter>``` : to check the status of the files
 
-```Git<space>add<space>L<space><tab><enter>``` : to auto fill and add the file
+```git<space>add<space>L<space><tab><enter>``` : to auto fill and add the file
 
-```Git<space>commit<space>-m<space>“fixed”<enter>``` : to commit added files
+```git<space>commit<space>-m<space>“fixed”<enter>``` : to commit added files
 
-```Git<space>push<enter>``` : to push the committed changes to the repository
+```git<space>push<enter>``` : to push the committed changes to the repository
 
 
 
