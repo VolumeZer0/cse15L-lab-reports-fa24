@@ -1,4 +1,4 @@
-![image](https://github.com/VolumeZer0/cse15L-lab-reports-fa24/assets/71284679/89e0bc73-8572-43ce-a694-ca4bd79499f9)# CSE 15L LAB REPORTS SPRING 24
+# CSE 15L LAB REPORTS SPRING 24
 
 ---
 ## Week 7
@@ -10,9 +10,7 @@ Screen Shot:
 ![Image](https://raw.githubusercontent.com/VolumeZer0/cse15L-lab-reports-fa24/main/4.png)
 
 Keys Pressed:
-```ssh kht002@ieng6.ucsd.edu <enter>``` : To log into ssh server
-
-Explantion:
+```ssh<space>kht002@ieng6.ucsd.edu<enter>``` : To log into ssh server
 
 ---
 
@@ -22,7 +20,8 @@ Screen Shot:
 ![Image](https://raw.githubusercontent.com/VolumeZer0/cse15L-lab-reports-fa24/main/5.png)
 
 Keys Pressed:
-```Git clone <control><v> yes <enter>``` : to clone the repo from copy and paste and agree to terms
+```Git<space>clone<space><control><v><enter> ``` : to clone the repo from copy and paste
+```yes<enter>``` : to agree to the terms and conditions
 
 ---
 
@@ -33,11 +32,11 @@ Screen Shot:
 
 Keys Pressed:
 
-```ls <enter>``` : to list the directories
+```ls<enter>``` : to list the directories
 
-```cd lab7 <enter>``` : to go into the "lab7" directory
+```cd<space>lab7<enter>``` : to go into the "lab7" directory
 
-```bash test.sh <enter>``` : to run the test.sh file
+```bash<space>test.sh<enter>``` : to run the test.sh file
 
 ---
 
@@ -49,15 +48,15 @@ Screen Shot:
 
 Keys Pressed:
 
-```vim test.sh``` : to start the vim enviorment on test.sh
+```vim<space>test.sh<enter>``` : to start the vim enviorment on test.sh
 
-```:set number <enter>``` : to show the line numbers
+```:set<space>number<enter>``` : to show the line numbers
 
-```:44 <enter>``` : to go to line 44 where the bugged line is
+```:44<enter>``` : to go to line 44 where the bugged line is
 
-```<L> <L> <L> <L> <L> <X> <I> <2> <esc>``` : to edit the file by going to the right 5 times, deleting the character that the cursor is on, going into insert mode, inserting 2, and then returning to command mode
+```LLLLLXI2<esc>``` : to edit the file by going to the right 5 times, deleting the character that the cursor is on, going into insert mode, inserting 2, and then returning to command mode
 
-```:wq <enter> ``` : to save and quit
+```:wq<space><enter> ``` : to save and quit
 
 ---
 
@@ -68,7 +67,7 @@ Screen Shot:
 
 Keys Pressed:
 
-```<up arrow> <up arrow> <enter>``` :  run the tests 
+```<up arrow><up arrow><enter>``` :  run the tests fromn the history
 
 ---
 
@@ -79,10 +78,10 @@ Screen Shot:
 
 Keys Pressed:
 
-```Git status <enter>``` : to check the status of the files
-```Git add L <tab> <enter>``` : to auto fill and add the file
-```Git commit -m “fixed” <enter>``` : to commit added files
-```Git push <enter>``` : to push the committed changes to the repository
+```Git<space>status<enter>``` : to check the status of the files
+```Git<space>add<space>L<space><tab><enter>``` : to auto fill and add the file
+```Git<space>commit<space>-m<space>“fixed”<enter>``` : to commit added files
+```Git<space>push<enter>``` : to push the committed changes to the repository
 
 
 
