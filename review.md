@@ -1,25 +1,25 @@
 ---
-##Week 9 Lab Report - Code Review
+## Week 9 Lab Report - Code Review
 ---
 
 # Step 1
 ---
 
-1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is. (Don't actually make the post! Just write the content that would go in such a post)
+_1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is. (Don't actually make the post! Just write the content that would go in such a post)_
 
 Student: Hello, I am having trouble with the practive skill demo jdb problem. I have tried many different things in order to find the length of the hashed but cant seem to get it right (I keep getting null when the answer should be 24). I believe the problem might be within the lines that im entering but I am not sure. Please do let me know and thank you.
-![Image](https://github.com/VolumeZer0/cse15L-lab-reports-fa24/blob/main/Screen%20Shot%202024-06-04%20at%209.29.42%20AM.png)
+![Image](https://github.com/VolumeZer0/cse15L-lab-reports-fa24/blob/main/Screen%20Shot%202024-06-04%20at%209.29.42%20AM.png?raw=true)
    
-2. A response from a TA asking a leading question or suggesting a command to try (To be clear, you are mimicking a TA here.)
+_2. A response from a TA asking a leading question or suggesting a command to try (To be clear, you are mimicking a TA here.)_
 
 TA: Hello! Remember that compiling for java debugger is different from compiling regularly, try instead of ```javac <file>```, do ```javac -g <file>```
 
-3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
+_3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is._
 
 Student: Thank you!! I didnt know that by forgetting the -g in the command would change the outcome of a java debugger output, I now know that before running a jdb i need to compile with ```javac -g <file>```
-![Image](https://github.com/VolumeZer0/cse15L-lab-reports-fa24/blob/main/Screen%20Shot%202024-06-04%20at%209.24.54%20AM.png)
+![Image](https://github.com/VolumeZer0/cse15L-lab-reports-fa24/blob/main/Screen%20Shot%202024-06-04%20at%209.24.54%20AM.png?raw=true)
   
-6. At the end, all the information needed about the setup including:
+_4. At the end, all the information needed about the setup including:_
 
 * The file & directory structure needed
   jBCrypt
